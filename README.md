@@ -44,42 +44,38 @@ Bedrock and Java Edition use different world formats. To convert:
 - Use [Chunker](https://chunker.app/) — a free online world converter
 - Upload your `.mcworld` file and export in Java format (or vice versa)
 
-## Storage Info (This Device)
-
-- **Total Worlds:** 27
-- **Total Size:** 71.5 MB
-
 ## Pushing to GitHub
 
-```bash
-# Initialize git inside the project folder
-cd minecraft_world
-git init
+### Initial Setup
 
-# Stage and commit
-git add .
-git commit -m "Initial commit: Minecraft Bedrock world export guide"
-
-# Rename branch to main
-git branch -M main
-
-# Add remote and push
-git remote add origin https://github.com/YOUR_USERNAME/minecraft_world.git
-git push -u origin main
-```
-
-> Replace `YOUR_USERNAME` with your GitHub username. Create the repo on [github.com/new](https://github.com/new) first — keep it empty (no README/`.gitignore`).
-
-## Creating the GitHub Repository
-
-1. Go to [github.com/new](https://github.com/new)
+1. Go to [github.com/new](https://github.com/new) and create a new repository
 2. Name it `minecraft_world`
 3. Leave it **empty** (no README, no `.gitignore`)
 4. Click **Create repository**
 
-Then add the remote and push:
+Then initialize and push:
 
 ```bash
+cd minecraft_world
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
 git remote add origin https://github.com/debeerswang/minecraft_world.git
 git push -u origin main
 ```
+
+### Pushing After Each Major Change
+
+After making updates to files (e.g., adding world exports, updating the README):
+
+```bash
+git add .
+git commit -m "Describe what changed"
+git push
+```
+
+> **Tip:** Write clear commit messages so you can track what changed over time. Examples:
+> - `"Add exported world: My Survival World"`
+> - `"Update README with new instructions"`
+> - `"Add resource pack files"`
