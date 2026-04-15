@@ -48,3 +48,24 @@ Bedrock and Java Edition use different world formats. To convert:
 
 - **Total Worlds:** 27
 - **Total Size:** 71.5 MB
+
+## Pushing to GitHub
+
+```bash
+# Initialize git inside the project folder
+cd minecraft_world
+git init
+
+# Stage and commit
+git add .
+git commit -m "Initial commit: Minecraft Bedrock world export guide"
+
+# Rename branch to main
+git branch -M main
+
+# Add remote and push
+git remote add origin https://github.com/YOUR_USERNAME/minecraft_world.git
+git push -u origin main
+```
+
+> Replace `YOUR_USERNAME` with your GitHub username. Create the repo on [github.com/new](https://github.com/new) first — keep it empty (no README/`.gitignore`).
