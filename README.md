@@ -69,3 +69,17 @@ git push -u origin main
 ```
 
 > Replace `YOUR_USERNAME` with your GitHub username. Create the repo on [github.com/new](https://github.com/new) first — keep it empty (no README/`.gitignore`).
+
+## Creating the GitHub Repository
+
+1. Go to [github.com/new](https://github.com/new)
+2. Name it `minecraft_world`
+3. Leave it **empty** (no README, no `.gitignore`)
+4. Click **Create repository**
+
+Then add the remote and push:
+
+```bash
+git remote add origin https://github.com/debeerswang/minecraft_world.git
+git push -u origin main
+```
